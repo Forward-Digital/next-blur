@@ -1,0 +1,26 @@
+{
+  "name": "npm-package-base",
+  "version": "1.0.0",
+  "description": "A template for building an npm package in JS/TS",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublish": "npm run prepare",
+    "publish": "npm publish"
+  },
+  "author": "Forward Digital Ltd",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "typescript": "^4.3.5"
+  },
+  "keywords": [
+    "typescript",
+    "npm"
+  ]
+}
